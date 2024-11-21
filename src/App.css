@@ -1,0 +1,418 @@
+body {
+  background-color: #e9efec;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* body container */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+footer{
+  margin-top: 120px;
+}
+/* error/message styles */
+.error {
+  color: red;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.upload-error {
+  color: red;
+}
+.msg {
+  color: green;
+}
+.msg,
+.upload-error {
+  margin-left: 5px;
+  margin-top: 7px;
+}
+/* login/signup pages wrapper */
+.main-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+.wrapper-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}.form-wrapper {
+  padding: 20px;
+  background-color: #c4dad2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.form-wrapper input,
+button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #e9efec;
+}
+.form-wrapper input {
+  width: 100%;
+}
+.form-wrapper button {
+  margin-top: 10px;
+  width: 40%;
+  cursor: pointer;
+  color: black;
+}
+.logo {
+  width: 5%;
+}
+.preview-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+.upload-logo-icon {
+  border: 2px #16423c solid;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* uploadProjects titles and pageUrls */ 
+.title,
+.pageUrl {
+  display: flex;
+  flex-direction: column;
+}
+/* main content */
+.main-container {
+  height: 100vh;
+  float: right;
+}
+/* navigation */
+nav {
+  display: flex;
+  background-color: #c4dad2;
+  box-shadow: 0px 0px 20px 0.2px rgba(0, 0, 0, 0.105);
+  padding: 10px;
+}
+.nav-btn {
+  font-size: 18px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.user-logo {
+  border-radius: 50%;
+  border: 2px #16423c solid;
+  object-fit: cover;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.center {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.1s ease-in-out;
+  padding: 5px;
+}
+.nav-link:hover {
+  background-color: #16423c;
+  color: white;
+}
+.active-nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #16423c;
+  padding: 5px;
+}
+.nav i,
+.loading {
+  margin-right: 5px;
+}
+/* Upload Page */
+.upload-form {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 125px;
+}
+.upload-form i {
+  display: block;
+  font-size: 30px;
+}
+.upload-thumbnail {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.upload-form input {
+  width: 335px;
+  height: 35px;
+  background-color: #d9d9d9;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+}
+/* upload button for upload projects */
+.upload-form button {
+  border: 2px #16423c solid;
+  font-size: 18px;
+  transition: all 0.1s linear;
+}
+.upload-form button:hover {
+  background-color: #16423c;
+  color: white;
+  cursor: pointer;
+}
+/* thumbnail previews and button for upload projects page */
+.thumbnail {
+  width: 205px;
+  height: 115px;
+  margin-top: 25px;
+}
+.hidden {
+  display: none;
+}
+
+.upload-thumbnail-icon {
+  border: 2px #16423c solid;
+  width: 205px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.upload-thumbnail-icon:hover,
+.upload-logo-icon:hover {
+  background-color: #16423c3c;
+}
+.upload-thumbnail-icon label {
+  cursor: pointer;
+}
+.upload-thumbnail-icon i {
+  font-size: 30px;
+  display: block;
+}
+.project-thumbnail {
+  object-fit: contain;
+}
+/* projects displaying styles */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0.2px rgba(0, 0, 0, 0.105);
+}
+.project-card:hover {
+  background-color: #16423c38;
+}
+.project-card a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.project-card p {
+  opacity: 50%;
+}
+.projects-user-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: #16423cbe;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.projectInfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 5px;
+}
+/* delete projects and edit projects */
+.deleteProject {
+  justify-content: space-between;
+}
+.deleteButton {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deleteButton:hover {
+  background-color: #16423c38;
+}
+.delete {
+  display: flex;
+}
+/* responsive for mobile */
+@media screen and (max-width: 480px) {
+  /* main content */
+  .main-container {
+    position: absolute;
+    top: 70px;
+    bottom: -100px;
+    width: 100%;
+    padding: 20px;
+    
+  }
+  /* navigation */
+  nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    flex-direction: column;
+
+  }
+  .open-nav-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: #ffffff;
+  }
+  .open-nav-userName {
+    font-size: 36px;
+  }
+  .mobile-user-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .userName {
+    font-size: 18px;
+  }
+  .links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  nav .open {
+    display: flex;
+  }
+  .profile {
+    flex-direction: row;
+  }
+  
+  /* login/signup page */
+  .link {
+    font-size: 14px;
+  }
+  .form-wrapper {
+    width: 65%;
+  }
+  h1 {
+    margin-left: 10px;
+    font-size: 28px;
+  }
+  .projects {
+    margin-top: 20px;
+  }
+  .project-thumbnail {
+    width: 100%;
+    max-height: 200px;
+  }
+}
+@media screen and (max-width: 1920px) and (min-width: 481px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 20%;
+    gap: 40px;
+  }
+  nav div {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .form-wrapper {
+    width: 20%;
+  }
+  .user-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .main-container {
+    width: 80%;
+    padding: 80px;
+  }
+  .projects {
+    margin-top: 20px;
+  }
+  .project-thumbnail {
+    width: 300px;
+    max-height: 150px;
+  }
+  .profile {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+}
